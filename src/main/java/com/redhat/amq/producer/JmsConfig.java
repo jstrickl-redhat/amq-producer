@@ -39,7 +39,7 @@ public class JmsConfig {
     @Value("${trustStorePath}")
     private String trustStorePath;
 
-    @Value("${trustStorePass}")
+    @Value("${trustStorePassword}")
     private String trustStorePass;
 
     @Value("${verifyHostName}")
