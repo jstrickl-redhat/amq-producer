@@ -71,7 +71,7 @@ public class JmsConfig {
         ActiveMQSslConnectionFactory factory = new ActiveMQSslConnectionFactory();
         factory.setBrokerURL(remoteUri());
         factory.setTrustStore(trustStorePath);
-        factory.setKeyStorePassword(trustStorePass);
+        factory.setTrustStorePassword(trustStorePass);
         factory.setUserName(brokerUser);
         factory.setPassword(brokerPass);
 
