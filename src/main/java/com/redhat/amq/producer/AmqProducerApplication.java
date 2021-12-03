@@ -9,5 +9,4 @@ public class AmqProducerApplication {
     public static void main(String[] args) {
         SpringApplication.run(AmqProducerApplication.class, args);
     }
-
 }
