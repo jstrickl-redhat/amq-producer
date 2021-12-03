@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Producer {
 
-    private static final Logger Log = LoggerFactory.getLogger(Producer.class);
+    private static final Logger LOG = LoggerFactory.getLogger(Producer.class);
 
     @Value("${queue.name}")
     private String destName;
@@ -20,10 +20,10 @@ public class Producer {
 
     public void sendMessage(String message){
         try {
-            Log.info("Message sending : " + message + " for queue: " + destName );
+            LOG.info("Message sending : " + message + " for queue: " + destName );
             this.jmsTemplate.convertAndSend(destName, message);
         } catch (Throwable ex) {
-            Log.error(ex.getMessage(), ex);
+            LOG.error(ex.getMessage(), ex);
         }
     }
 }
