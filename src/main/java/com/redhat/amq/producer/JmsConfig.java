@@ -50,7 +50,6 @@ public class JmsConfig {
 
         JmsTemplate jmsTemplate = new JmsTemplate();
         jmsTemplate.setConnectionFactory(connectionFactory);
-
         jmsTemplate.afterPropertiesSet();
 
         return jmsTemplate;
