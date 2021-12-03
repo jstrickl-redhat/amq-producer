@@ -27,10 +27,10 @@ public class JmsConfig {
     @Value("${broker.host}")
     private String brokerHost;
 
-    @Value("${broker.user}")
+    @Value("${broker.username}")
     private String brokerUser;
 
-    @Value("${broker.pass}")
+    @Value("${broker.password}")
     private String brokerPass;
 
     @Value("${broker.maxConnections}")
